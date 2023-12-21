@@ -1,35 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">    <!--this makes everything that the html does on the website be in english-->
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>films4fun</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to movie rec app</h1>
-    <nav class="navbar">
-        <div class="navbar__container">
-           
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
-                <div class="navbar__dropdown">
-                    <button class="dropbtn" id="genresBtn">Genres</button>
-                    <div class="navbar__dropdown-content" id="genresDropdown" style="display: none;">
-                        <a href="/genre/action.html">Action</a>
-                        <a href="/genre/comedy.html">Comedy</a>
-                        <a href="/genre/drama.html">Drama</a>
-                        <a href="/genre/romance.html">Romance</a> 
+    <!-- Navigation Tabs -->
+    <div class="tab-bar">
+        <a href="#" class="active">Home</a>
+        <a href="#">My Movies</a>
+        <a href="#">Browse</a>
+        <a href="#">Social</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Welcome to the movie rec app</h1>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__toggle" id="mobile-menu">
+                    <!-- Mobile Menu Toggle Button -->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <div class="navbar__dropdown">
+                        <!-- Genres Dropdown -->
+                        <button class="dropbtn" id="genresBtn">Genres</button>
+                        <div class="navbar__dropdown-content" id="genresDropdown" style="display: none;">
+                            <!-- Genre Links -->
+                            <a href="/genre/action.html">Action</a>
+                            <a href="/genre/comedy.html">Comedy</a>
+                            <a href="/genre/drama.html">Drama</a>
+                            <a href="/genre/romance.html">Romance</a>
+                        </div>
                     </div>
+                    <ul class="navbar__menu">
+                        <!-- Navbar Links -->
+                        <li class="navbar__item">
+                            <a href="/" class="navbar__links"> Home </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="/tech.html" class="navbar__links"> FILL IN WITH WHATEVER </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="navbar__menu">
-                    <li class="narvar__item">
-                        <a href="/" class="navbar__links"> Home </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/tech.html" class="narvar__links"> FILL IN WITH WHATEVER </a>
-        <p>This is a website for movie recommendations and communities to discuss movies and others films with!!</p>
-        <button id="myButton">click for a new movie!</button>
-        <script src="app.js"></script>    <!--this line tells the code that the python/dropdown menu functions is in the "app.js" folder-->
-    </body>
-    </html>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Description -->
+    <p>This is a website for movie recommendations and communities to discuss movies and other films with!</p>
+
+    <!-- Button for a New Movie -->
+    <button id="myButton">Click for a new movie!</button>
+
+    <!-- Script for Dropdown Menu Functions -->
+    <script src="app.js"></script> <!-- This line tells the code that the python/dropdown menu functions are in the "app.js" folder -->
+</div>
+</body>
+
+</html>
