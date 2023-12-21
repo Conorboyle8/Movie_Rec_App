@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>films4fun</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 </head>
 
 <body>
@@ -16,10 +17,23 @@
         <a href="#">Browse</a>
         <a href="#">Social</a>
     </div>
-
+    
+    <div id="signInForm" class="hidden">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button id="signInButton">Sign In</button>
+    </div>
+    
+    <div clsss="search-container">
+        <label for="search-container">Search movies:</label>
+        <input type="text" id="search" placeholder="Enter movie title...">
+        <button onclick="searchMovies()">Search</button>
+    </div>
     <!-- Main Content -->
     <div class="content">
-        <h1>Welcome to the movie rec app</h1>
+        <h1>Welcome to the movie reccomendation app</h1>
 
         <!-- Navbar -->
         <nav class="navbar">
@@ -58,11 +72,9 @@
     <p>This is a website for movie recommendations and communities to discuss movies and other films with!</p>
 
     <!-- Button for a New Movie -->
-    <button id="myButton">Click for a new movie!</button>
 
     <!-- Script for Dropdown Menu Functions -->
     <script src="app.js"></script> <!-- This line tells the code that the python/dropdown menu functions are in the "app.js" folder -->
 </div>
 </body>
-
 </html>
